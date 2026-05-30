@@ -66,10 +66,10 @@ El script espera una **carpeta principal** que contenga subcarpetas, y los PDFs 
 
 ```
 carpeta_principal/
-├── enero/
+├── obligacion1/
 │   ├── acta_001.pdf
 │   └── acta_002.pdf
-└── febrero/
+└── obligacion2/
     ├── acta_003.pdf
     └── acta_004.pdf
 ```
