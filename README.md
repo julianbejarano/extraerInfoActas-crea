@@ -129,7 +129,60 @@ El campo **Listado en** se deja en blanco para que lo completes manualmente seg�
 
 ---
 
+
 ## Solución de problemas
+
+● Si el archivo no abre con doble clic, ejecútalo desde la terminal:
+
+  ---
+  Windows
+  
+  1. Guarda el archivo extraer-actas.py en una carpeta que encuentres fácilmente,
+  por ejemplo en el Escritorio o en Documentos
+  2. Abre esa carpeta en el Explorador de archivos
+  3. Haz clic en la barra de direcciones (donde aparece la ruta, por ejemplo
+  C:\Users\TuNombre\Desktop), borra el texto y escribe cmd, luego presiona Enter
+  4. Se abre una ventana negra ya ubicada en esa carpeta. Escribe:
+  python extraer-actas.py
+  5. Presiona Enter
+
+  ---
+  macOS
+  
+  1. Guarda el archivo extraer-actas.py en una carpeta que encuentres fácilmente,
+  por ejemplo Escritorio o Documentos
+  2. Abre la aplicación Terminal (presiona Cmd + Espacio, escribe "Terminal" y
+  presiona Enter)
+  3. Escribe cd  (con un espacio al final), luego arrastra la carpeta donde
+  guardaste el archivo directamente a la ventana de la Terminal — esto escribe la
+  ruta automáticamente
+  4. Presiona Enter
+  5. Escribe:
+  python3 extraer-actas.py
+  6. Presiona Enter
+
+  ---
+  Linux
+
+  1. Guarda el archivo extraer-actas.py en una carpeta que encuentres fácilmente
+  2. Abre esa carpeta en el explorador de archivos
+  3. Haz clic derecho dentro de la carpeta y selecciona "Abrir terminal aquí" (la
+  opción puede variar según el sistema)
+  4. Escribe:
+  python3 extraer-actas.py
+  5. Presiona Enter
+
+  ---
+  En todos los casos, una vez ejecutado el script funciona igual: aparecen las
+  ventanas emergentes para seleccionar la carpeta de entrada y el destino del
+  archivo de salida.
+
+
+
+
+
+
+
 
 | Síntoma | Causa probable | Solución |
 |---------|---------------|----------|
