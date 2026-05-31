@@ -34,13 +34,13 @@ Las librerías `pdfplumber`, `scikit-learn` y `numpy` se instalan automáticamen
 1. Descarga e instala Python desde [python.org/downloads](https://www.python.org/downloads/)
    - Durante la instalación marca **"Add Python to PATH"**
    - Verifica que **"tcl/tk and IDLE"** esté seleccionado (viene marcado por defecto)
-2. Descarga el archivo `extraer-actas.py` desde este repositorio
+2. Descarga el archivo `extraer-actas.py` desde este repositorio, flecha del boton verde superior que dice "code" -> Download zip
 3. Listo — sigue los pasos de [Uso](#uso)
 
 ### macOS
 
 1. Descarga e instala Python desde [python.org/downloads](https://www.python.org/downloads/)
-2. Descarga el archivo `extraer-actas.py` desde este repositorio
+2. Descarga el archivo `extraer-actas.py` desde este repositorio, flecha del boton verde superior que dice "code" -> Download zip
 3. Listo — sigue los pasos de [Uso](#uso)
 
 > Si instalaste Python con Homebrew y aparece un error de `tkinter`, abre la Terminal y ejecuta:
