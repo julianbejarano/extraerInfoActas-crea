@@ -2,9 +2,7 @@
 
 
 Script de Python que lee actas de reunión en PDF (formato IDARTES), extrae los campos clave y genera un archivo de texto para usar en informes mensuales.
-Esta aplicación puede contener fallos, no es oficial de ninguna entidad
-Si deseas contribuir al desarrollador puedes invitarle un café
-O aportarle 10 lks por Nequi al 3194796728
+Esta aplicación puede contener fallos, el uso es responsabilidad de cada un@, no es oficial de ninguna entidad, si deseas contribuir al desarrollador puedes invitarle un café, también puedes aportarle 10 lks por Nequi al 3194796728.
 Con tus aportes se puede mejorar la aplicación y mantener su buen funcionamiento
 Desarrollador: Julian Bejarano
 
