@@ -82,7 +82,7 @@ carpeta_principal/
 
 ### Opción A — Doble clic (Windows y macOS)
 
-1. Haz doble clic sobre `extraer-actas.py`
+1. Una vez está la carpeta descomprimida o tienes el archivo `extraer-actas.py` , haz doble clic sobre el.
 2. Aparece una ventana: **selecciona la carpeta principal** que contiene las subcarpetas con las actas
 3. El script procesa los PDFs y muestra el progreso en la consola
 4. Al terminar, aparece otra ventana: **elige dónde guardar** el archivo `.txt` de salida
