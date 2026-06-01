@@ -10,6 +10,7 @@ Desarrollador: Julian Bejarano
 ---
 
 ## ¿Qué extrae?
+
 la Version 1 - extraer-actas.py
 Por cada acta se obtienen los siguientes campos:
 
@@ -25,7 +26,19 @@ Por cada acta se obtienen los siguientes campos:
 
 
   Versión 2 — extraer-actas-v2.py
-  
+
+Por cada acta se obtienen los siguientes campos:
+
+| Campo | Descripción |
+|-------|-------------|
+| Archivo | Nombre del PDF original |
+| Fecha | Fecha de la reunión |
+| Asunto | Tema de la reunión |
+| Radicado | Número de radicado del documento |
+| Lugar | Lugar indicado en el acta|
+| Descripción | Resumen automático de la sección "Desarrollo de la reunión" |
+
+
   La segunda versión genera la información de cada acta en formato de párrafo 
   narrativo, SINE EMBARGO SE DEBE REVISAR LA INFORMACIÓN.
 
@@ -44,18 +57,6 @@ Por cada acta se obtienen los siguientes campos:
   Los campos hoja X, fila X se completan manualmente según el registro de
   asistencia.
 
-  Campos extraídos
-
-  │    Campo    │                         Descripción                          │
-  │ Fecha       │ Fecha de la reunión                                          │
-  │ Radicado    │ Número de radicado del documento                             │
-  │ Asunto      │ Tema de la reunión (incluyendo texto que se parte en dos     │
-  │             │ filas)                                                       │
-  │ Lugar       │ Lugar o plataforma donde se realizó la reunión               │
-  │ Descripción │ Resumen automático de la sección "Desarrollo de la reunión"  │
-  
-
-  Uso
 
 ## Requisitos
 
@@ -142,7 +143,7 @@ RESUMEN DE ACTAS
 Generado el: 30-05-2026 14:35
 ============================================================
 
-versiñon 1:
+version 1: extraer-actas.py
 ============================================================
   CARPETA: enero
 ============================================================
@@ -156,7 +157,7 @@ versiñon 1:
 ----------------------------------------
 
 
-Version 2:
+Version 2:extraer-actas-v2.py
 [nombre del archivo.pdf]
 (15-05-2026) Formato de Evidencia de Reunión (GDO-F-02 V3), con número de radicado 20265200---- , con asunto: Reunión de Área, Creación Digital (Virtual), que tuvo lugar en Meet Google, donde se trató como temas: La reunión virtual  comenzó con un emotivo reconocimiento, liderado por el orientador del equipo, Julián Darío Bejarano Gómez, quien abrió el espacio expresando su profunda admiración hacia los artistas formadores por la calidez y el sentido humano que imprimen diariamente en sus acciones al trabajar con las comunidades. Mi asistencia se puede constatar en el sistema Orfeo, en la hoja X, fila X, del anexo correspondiente al listado de asistencia.
 ----------------------------------------
