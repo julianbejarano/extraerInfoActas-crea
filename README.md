@@ -29,20 +29,6 @@ Por cada acta se obtienen los siguientes campos:
   La segunda versión genera la información de cada acta en formato de párrafo 
   narrativo, SINE EMBARGO SE DEBE REVISAR LA INFORMACIÓN.
 
-  Diferencias respecto a la versión 1
-
-  ┌─────────────────────┬──────────────────────┬──────────────────────────────┐
-  │       Aspecto       │          v1          │              v2              │
-  ├─────────────────────┼──────────────────────┼──────────────────────────────┤
-  │ Formato de salida   │ Bloque de campos     │ Párrafo narrativo en prosa   │
-  │                     │ etiquetados          │                              │
-  ├─────────────────────┼──────────────────────┼──────────────────────────────┤
-  │ Campo Lugar         │ No extraído          │ Extraído y incluido en el    │
-  │                     │                      │ párrafo                      │
-  ├─────────────────────┼──────────────────────┼──────────────────────────────┤
-  │ Identificación del  │ Nombre del PDF entre │ Nombre del PDF entre         │
-  │ archivo             │  paréntesis          │ corchetes, antes del párrafo │
-  └─────────────────────┴──────────────────────┴──────────────────────────────┘
 
   Formato de salida
 
