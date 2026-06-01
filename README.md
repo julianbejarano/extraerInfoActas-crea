@@ -38,9 +38,9 @@ Por cada acta se obtienen los siguientes campos:
 | Lugar | Lugar indicado en el acta|
 | Descripción | Resumen automático de la sección "Desarrollo de la reunión" |
 
-
   La segunda versión genera la información de cada acta en formato de párrafo 
-  narrativo, SINE EMBARGO SE DEBE REVISAR LA INFORMACIÓN.
+  narrativo.
+  IMPORTANTE: SIEMPRE REVISAR LA INFORMACIÓN, PUEDEN HABER ERRORES DE REDACCIÓN.
 
 
   Formato de salida
@@ -73,13 +73,13 @@ Las librerías `pdfplumber`, `scikit-learn` y `numpy` se instalan automáticamen
 1. Descarga e instala Python desde [python.org/downloads](https://www.python.org/downloads/)
    - Durante la instalación marca **"Add Python to PATH"**
    - Verifica que **"tcl/tk and IDLE"** esté seleccionado (viene marcado por defecto)
-2. Descarga el archivo `extraer-actas.py` desde este repositorio, flecha del boton verde superior que dice "code" -> Download zip
+2. Descarga el archivo `extraer-actas-v2.py` desde este repositorio, flecha del boton verde superior que dice "code" -> Download zip
 3. Listo — sigue los pasos de [Uso](#uso)
 
 ### macOS
 
 1. Descarga e instala Python desde [python.org/downloads](https://www.python.org/downloads/)
-2. Descarga el archivo `extraer-actas.py` desde este repositorio, flecha del boton verde superior que dice "code" -> Download zip
+2. Descarga el archivo `extraer-actas-v2.py` desde este repositorio, flecha del boton verde superior que dice "code" -> Download zip
 3. Listo — sigue los pasos de [Uso](#uso)
 
 > Si instalaste Python con Homebrew y aparece un error de `tkinter`, abre la Terminal y ejecuta:
@@ -95,7 +95,7 @@ Abre la Terminal y ejecuta:
 sudo apt update && sudo apt install python3 python3-pip python3-tk
 ```
 
-Luego descarga `extraer-actas.py` y sigue los pasos de [Uso](#uso).
+Luego descarga `extraer-actas-v2.py` y sigue los pasos de [Uso](#uso).
 
 ---
 
@@ -121,7 +121,7 @@ carpeta_principal/
 
 ### Opción A — Doble clic (Windows y macOS)
 
-1. Una vez está la carpeta descomprimida o tienes el archivo `extraer-actas.py` , haz doble clic sobre el.
+1. Una vez está la carpeta descomprimida o tienes el archivo `extraer-actas-v2.py` , haz doble clic sobre el.
 2. Aparece una ventana: **selecciona la carpeta principal** que contiene las subcarpetas con las actas
 3. El script procesa los PDFs y muestra el progreso en la consola
 4. Al terminar, aparece otra ventana: **elige dónde guardar** el archivo `.txt` de salida
@@ -129,7 +129,7 @@ carpeta_principal/
 ### Opción B — Terminal
 
 ```bash
-python3 extraer-actas.py
+python3 extraer-actas-v2.py
 ```
 
 El flujo es el mismo: dos ventanas emergentes, una al inicio y otra al final.
@@ -175,19 +175,19 @@ El campo **Listado en** se deja en blanco para que lo completes manualmente seg�
   ---
   Windows
   
-  1. Guarda el archivo extraer-actas.py en una carpeta que encuentres fácilmente,
+  1. Guarda el archivo extraer-actas-v2.py en una carpeta que encuentres fácilmente,
   por ejemplo en el Escritorio o en Documentos
   2. Abre esa carpeta en el Explorador de archivos
   3. Haz clic en la barra de direcciones (donde aparece la ruta, por ejemplo
   C:\Users\TuNombre\Desktop), borra el texto y escribe cmd, luego presiona Enter
   4. Se abre una ventana negra ya ubicada en esa carpeta. Escribe:
-  python extraer-actas.py
+  python extraer-actas-v2.py
   5. Presiona Enter
 
   ---
   macOS
   
-  1. Guarda el archivo extraer-actas.py en una carpeta que encuentres fácilmente,
+  1. Guarda el archivo extraer-actas-v2.py en una carpeta que encuentres fácilmente,
   por ejemplo Escritorio o Documentos
   2. Abre la aplicación Terminal (presiona Cmd + Espacio, escribe "Terminal" y
   presiona Enter)
@@ -196,18 +196,18 @@ El campo **Listado en** se deja en blanco para que lo completes manualmente seg�
   ruta automáticamente
   4. Presiona Enter
   5. Escribe:
-  python3 extraer-actas.py
+  python3 extraer-actas-v2.py
   6. Presiona Enter
 
   ---
   Linux
 
-  1. Guarda el archivo extraer-actas.py en una carpeta que encuentres fácilmente
+  1. Guarda el archivo extraer-actas-v2.py en una carpeta que encuentres fácilmente
   2. Abre esa carpeta en el explorador de archivos
   3. Haz clic derecho dentro de la carpeta y selecciona "Abrir terminal aquí" (la
   opción puede variar según el sistema)
   4. Escribe:
-  python3 extraer-actas.py
+  python3 extraer-actas-v2.py
   5. Presiona Enter
 
   ---
