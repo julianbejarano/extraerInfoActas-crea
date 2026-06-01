@@ -46,29 +46,16 @@ Por cada acta se obtienen los siguientes campos:
 
   Campos extraídos
 
-  ┌─────────────┬──────────────────────────────────────────────────────────────┐
   │    Campo    │                         Descripción                          │
-  ├─────────────┼──────────────────────────────────────────────────────────────┤
   │ Fecha       │ Fecha de la reunión                                          │
-  ├─────────────┼──────────────────────────────────────────────────────────────┤
   │ Radicado    │ Número de radicado del documento                             │
-  ├─────────────┼──────────────────────────────────────────────────────────────┤
   │ Asunto      │ Tema de la reunión (incluyendo texto que se parte en dos     │
   │             │ filas)                                                       │
-  ├─────────────┼──────────────────────────────────────────────────────────────┤
   │ Lugar       │ Lugar o plataforma donde se realizó la reunión               │
-  ├─────────────┼──────────────────────────────────────────────────────────────┤
   │ Descripción │ Resumen automático de la sección "Desarrollo de la reunión"  │
-  └─────────────┴──────────────────────────────────────────────────────────────┘
+  
 
   Uso
-
-  El flujo es idéntico al de la versión 1: doble clic o python3 
-  extraer-actas-v2.py, selección de carpeta principal con subcarpetas, y elección
-  del archivo de salida al terminar.
-
-
-
 
 ## Requisitos
 
