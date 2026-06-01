@@ -10,7 +10,7 @@ Desarrollador: Julian Bejarano
 ---
 
 ## ¿Qué extrae?
-
+la Version 1 - extraer-actas.py
 Por cada acta se obtienen los siguientes campos:
 
 | Campo | Descripción |
@@ -22,6 +22,67 @@ Por cada acta se obtienen los siguientes campos:
 | Descripción | Resumen automático de la sección "Desarrollo de la reunión" |
 
 ---
+
+
+  Versión 2 — extraer-actas-v2.py
+  
+  La segunda versión genera la información de cada acta en formato de párrafo 
+  narrativo, SINE EMBARGO SE DEBE REVISAR LA INFORMACIÓN.
+
+  Diferencias respecto a la versión 1
+
+  ┌─────────────────────┬──────────────────────┬──────────────────────────────┐
+  │       Aspecto       │          v1          │              v2              │
+  ├─────────────────────┼──────────────────────┼──────────────────────────────┤
+  │ Formato de salida   │ Bloque de campos     │ Párrafo narrativo en prosa   │
+  │                     │ etiquetados          │                              │
+  ├─────────────────────┼──────────────────────┼──────────────────────────────┤
+  │ Campo Lugar         │ No extraído          │ Extraído y incluido en el    │
+  │                     │                      │ párrafo                      │
+  ├─────────────────────┼──────────────────────┼──────────────────────────────┤
+  │ Identificación del  │ Nombre del PDF entre │ Nombre del PDF entre         │
+  │ archivo             │  paréntesis          │ corchetes, antes del párrafo │
+  └─────────────────────┴──────────────────────┴──────────────────────────────┘
+
+  Formato de salida
+
+  Por cada acta se genera un párrafo con la siguiente estructura:
+
+  [nombre_del_archivo.pdf]
+  (DD-MM-YYYY) Formato de Evidencia de Reunión (GDO-F-02 V3), con número de
+  radicado
+  [radicado], con asunto: [asunto], que tuvo lugar en [lugar], donde se trató como
+  temas: [resumen del desarrollo]. Mi asistencia se puede constatar en el sistema
+  Orfeo, en la hoja X, fila X, del anexo correspondiente al listado de asistencia.
+
+  Los campos hoja X, fila X se completan manualmente según el registro de
+  asistencia.
+
+  Campos extraídos
+
+  ┌─────────────┬──────────────────────────────────────────────────────────────┐
+  │    Campo    │                         Descripción                          │
+  ├─────────────┼──────────────────────────────────────────────────────────────┤
+  │ Fecha       │ Fecha de la reunión                                          │
+  ├─────────────┼──────────────────────────────────────────────────────────────┤
+  │ Radicado    │ Número de radicado del documento                             │
+  ├─────────────┼──────────────────────────────────────────────────────────────┤
+  │ Asunto      │ Tema de la reunión (incluyendo texto que se parte en dos     │
+  │             │ filas)                                                       │
+  ├─────────────┼──────────────────────────────────────────────────────────────┤
+  │ Lugar       │ Lugar o plataforma donde se realizó la reunión               │
+  ├─────────────┼──────────────────────────────────────────────────────────────┤
+  │ Descripción │ Resumen automático de la sección "Desarrollo de la reunión"  │
+  └─────────────┴──────────────────────────────────────────────────────────────┘
+
+  Uso
+
+  El flujo es idéntico al de la versión 1: doble clic o python3 
+  extraer-actas-v2.py, selección de carpeta principal con subcarpetas, y elección
+  del archivo de salida al terminar.
+
+
+
 
 ## Requisitos
 
@@ -101,13 +162,14 @@ El flujo es el mismo: dos ventanas emergentes, una al inicio y otra al final.
 
 ---
 
-## Ejemplo de salida
+## Ejemplo de salidas
 
 ```
 RESUMEN DE ACTAS
 Generado el: 30-05-2026 14:35
 ============================================================
 
+versiñon 1:
 ============================================================
   CARPETA: enero
 ============================================================
@@ -120,12 +182,10 @@ Generado el: 30-05-2026 14:35
   Listado en:   Hoja X, fila X
 ----------------------------------------
 
-  (acta_002.pdf)
-  Fecha:        28-01-2026
-  Asunto:       Mesa de trabajo - lineamientos pedagógicos
-  Radicado:     20261200051874
-  Descripción:  El equipo presentó los ajustes al documento de lineamientos...
-  Listado en:   Hoja X, fila X
+
+Version 2:
+[nombre del archivo.pdf]
+(15-05-2026) Formato de Evidencia de Reunión (GDO-F-02 V3), con número de radicado 20265200---- , con asunto: Reunión de Área, Creación Digital (Virtual), que tuvo lugar en Meet Google, donde se trató como temas: La reunión virtual  comenzó con un emotivo reconocimiento, liderado por el orientador del equipo, Julián Darío Bejarano Gómez, quien abrió el espacio expresando su profunda admiración hacia los artistas formadores por la calidez y el sentido humano que imprimen diariamente en sus acciones al trabajar con las comunidades. Mi asistencia se puede constatar en el sistema Orfeo, en la hoja X, fila X, del anexo correspondiente al listado de asistencia.
 ----------------------------------------
 ```
 
