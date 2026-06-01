@@ -421,7 +421,7 @@ def generar_texto_informe(carpetas_actas: dict) -> str:
 
     lineas = [
         "Herramienta de apoyo al diligenciamiento de informes",
-        "Esta aplicación puede contener fallos, NO ES UNA HERRAMIENTA OFICIAL,
+        "Esta aplicación puede contener fallos, NO ES UNA HERRAMIENTA OFICIAL",
         "Desarrollador : Julian Bejarano G",
         "Si deseas contribuir al desarrollador puedes invitarle un café",
         "También puedes aportarle 10 lks por Nequi al 3194796728",
