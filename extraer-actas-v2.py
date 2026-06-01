@@ -420,8 +420,14 @@ def generar_texto_informe(carpetas_actas: dict) -> str:
     separador_fino   = "-" * 40
 
     lineas = [
-        "RESUMEN DE ACTAS",
-        f"Generado el: {datetime.today().strftime('%d-%m-%Y %H:%M')}",
+        "Herramienta de apoyo al diligenciamiento de informes",
+        "Esta aplicación puede contener fallos, NO ES UNA HERRAMIENTA OFICIAL,
+        "Desarrollador : Julian Bejarano G",
+        "Si deseas contribuir al desarrollador puedes invitarle un café",
+        "También puedes aportarle 10 lks por Nequi al 3194796728",
+        "Con tus aportes se puede mejorar la aplicación y mantener su buen funcionamiento",
+        "VERIFICAR LA INFORMACIÓN ES FUNDAMENTAL",         
+        f"Documento generado el: {datetime.today().strftime('%d-%m-%Y %H:%M')}",
         separador_grueso,
     ]
 
